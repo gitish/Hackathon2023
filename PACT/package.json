@@ -1,0 +1,21 @@
+{
+    "name": "pact-tests",
+    "version": "1.0.0",
+    "description": "Pact contract testing example",
+    "main": "index.js",
+    "scripts": {
+      "test:consumer": "jest consumer.pact.js", 
+      "test:provider": "jest provider.verify.js",
+      "server": "node server.js"
+    },
+    "author": "Shailendra Shail",
+    "license": "MIT",
+    "devDependencies": {
+      "@pact-foundation/pact": "^3.3.1",
+      "jest": "^27.5.1",
+      "supertest": "^6.1.3"
+    },
+    "dependencies": {
+      "express": "^4.14.0"  
+    }
+  }
